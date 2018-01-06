@@ -1,0 +1,30 @@
+<section class="bienvenida">
+  
+  <div class="container">
+    
+    <header class="encabezado">
+      
+        <a href="#" class="text-white display-4">
+            <h1>{{ title }}</h1>
+        </a>
+      
+      <form class="hidden-sm-down">
+        <input class="form-control" name="inputBuscar" type="text" placeholder="Buscar...">
+        <button class="btn btn-primary">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+
+      <nav>
+        <ul class="d-flex">
+          <!-- <li><a href="/lista-video">Lista de videos</a></li> -->
+          <li><a [routerLink]="['/lista-video']" [queryParams]="{'videoID': 230}"
+            routerLinkActive="active">Lista de videos</a></li>
+          <!-- <li><a href="/video-player">Video Player</a></li> -->
+          <li><a [routerLink]="['/video-player']">Video Player</a></li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+</section>
